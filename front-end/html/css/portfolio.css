@@ -1,0 +1,148 @@
+/*All HTML*/
+body, html {
+	height: 100%;
+}
+
+/*Welcome*/
+.jumbo-img{
+	background-image: url("https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;		
+	padding: 6em 0 2em 0 ;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	max-height: 40em;
+	min-height: 22em;
+	position: relative;
+	margin-bottom: 0;  
+}
+.jumbo-text{
+	background-color: rgb(0,0,0); /* Fallback color */
+  	background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 100%
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	z-index: 10; 
+}
+.title-break {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    margin: .5em auto; 
+    width: 60%
+}
+.vertical-line {
+  border-left: 2px solid #fff;
+  height: 36%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  bottom: 0;
+}
+
+/*About Section*/
+
+#about-section {
+	margin-top: -.25em; 
+	padding: 5em; 
+	background: white;
+}
+#about-card {
+	background-color: white; 
+	margin: 2.5em; 
+}
+#about-card-description {
+}
+.heading {
+	font-size: 2.2em; 
+}
+.lead {
+	font-size: 1.05em; 
+}
+.mini-break {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(150, 150, 150, 1), rgba(150, 150, 150, 0.35), rgba(150, 150, 150, 0));
+    margin: 2em auto; 
+    width: 60%
+    left: 0;
+}
+
+/*Project Section*/
+
+#project-section {
+	background-image: url("https://images.pexels.com/photos/1156684/pexels-photo-1156684.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+	background-size: cover;		
+	padding: 6em 0 2em 0 ;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150vh;
+	max-height: 60em;
+	min-height: 22em;
+	position: relative;
+	margin-bottom: 0;  
+}
+#project-header {
+	background-color: rgb(0,0,0); /* Fallback color */
+  	background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 100%
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	z-index: 10;
+}
+.projects {
+	bottom: 40%;
+	height: 100%
+	width: 100%;
+	padding: 2em; 
+
+}
+
+.project-img {
+	height: 5em;
+	width: 7em; 
+	margin: 1em; 
+}
+
+
+/*Scrolling Nav Buttons*/
+#navigation {	
+	background-color: #fbac53; 
+
+}
+
+
+/*Footer*/
+.jumbo-img-foot{
+	background-image: url("https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;		
+	padding: 6em 0 2em 0 ;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1vh;
+	max-height: 3em;
+	min-height: .5em;
+	position: relative;
+	margin-top: 0; 
+	margin-bottom: 0; 
+}

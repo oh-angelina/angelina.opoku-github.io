@@ -12,7 +12,7 @@
 
 // didn't work
 
-(function ($) {
+/*(function ($) {
   $(document).ready(function(){
 
     // hide .navbar first
@@ -32,4 +32,4 @@
     });
 
 });
-  }(jQuery));
+  }(jQuery));*/

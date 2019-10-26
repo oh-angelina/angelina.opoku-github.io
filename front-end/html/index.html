@@ -1,3 +1,28 @@
+<!-- To Do
+	- fix footer line problem
+	- create a modal template for projects
+	-create a resume template 
+	-upload sample resume template
+	- make sure that picutre and text reduce padding as they shrink
+	- increase padding between picture and text
+	- pick fonts
+	- get projects to line up correctly
+	- reduce margins on projects
+	- create horizontal lines that connect projects
+	- shrink footer
+	- create contact form
+	- add a sliding navbar of github, linkedin, email, and resume
+	- add button that shows that contact me form is not yet enabled
+
+	Next Steps
+	- add in cool transition animations after wathcing some more javascript tutorials
+	- set it up so that contact form sends to me and alerts user that feedback was sent 
+	- build some projects, upload, and more
+
+
+ -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +54,7 @@
 		<a href="#about-section"><button type="button" class="btn btn-outline-light">About Me</button></a>
 	</div>
 </div>
-	<div class="vertical-line"></div> 
+	<div id="vertical-line-1"></div> 
 </section>
 
 <!-- Navigation Icons -->
@@ -78,11 +103,11 @@
 			</button>
 
 			<!-- Resume Modal -->
-			<div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeTitle" aria-hidden="true">
 			  <div class="modal-dialog modal-dialog-centered" role="document">
 			    <div class="modal-content">
 			      <div class="modal-header">
-			        <h5 class="modal-title" id="exampleModalLongTitle">Resume</h5>
+			        <h5 class="modal-title" id="resumeTitle">Resume</h5>
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			          <span aria-hidden="true">&times;</span>
 			        </button>
@@ -109,6 +134,7 @@
 
 <!-- Project Section -->
 <section class="container-fluid padding" id="project-section">
+	<div id="vertical-line-2"></div> 
 <div class="row padding">
 
 <!-- Project Header -->
@@ -123,34 +149,165 @@
 	</div>
 </div>
 
-<!-- Card Decks -->
+<!-- Project Decks -->
 
 	<div class="container-fluid padding">
-		<div class="projects row text-center padding">
+		<div class="row text-center padding" id="projects">
 
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<a href="#"><img src="https://images.pexels.com/photos/1156684/pexels-photo-1156684.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="project-img"></a>
+				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project1">
 			</div>
+
+				<!-- Modal -->
+				<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1-title" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+	
+
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<a href="#"><img src="https://images.pexels.com/photos/1156684/pexels-photo-1156684.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="project-img"></a>
+				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project2">
 			</div>
+
+				<!-- Modal -->
+				<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="project-2" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="project2-title">Modal title</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>			
+
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<a href="#"><img src="https://images.pexels.com/photos/1156684/pexels-photo-1156684.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="project-img"></a>
+				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project3">
 			</div>
+
+				<!-- Modal -->
+				<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="project3-title" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="project3-title">Modal title</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>			<div class="col-xs-12 col-sm-6 col-md-4">
+				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project4">
+			</div>
+
+				<!-- Modal -->
+				<div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="project4-title" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="project4-title">Modal title</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>			
+
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<a href="#"><img src="https://images.pexels.com/photos/1156684/pexels-photo-1156684.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="project-img"></a>
+				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project5">
 			</div>
+
+				<!-- Modal -->
+				<div class="modal fade" id="project5" tabindex="-1" role="dialog" aria-labelledby="project5-title" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="project5-title">Modal title</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>			
+
 			<div class="col-xs-12 col-sm-6 col-md-4">
-				<a href="#"><img src="https://images.pexels.com/photos/1156684/pexels-photo-1156684.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="project-img"></a>
+				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project6">
 			</div>
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<a href="#"><img src="https://images.pexels.com/photos/1156684/pexels-photo-1156684.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="project-img"></a>
-			</div>
+
+				<!-- Modal -->
+				<div class="modal fade" id="project6" tabindex="-1" role="dialog" aria-labelledby="project6-title" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="project6-title">Modal title</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 
 		</div>
 	</div>
 
 </div>	
+	<div id="vertical-line-3"></div> 
 </section>
 
 <!-- Contact Me -->
@@ -210,12 +367,16 @@
 <!-- Footer -->
 <footer>
 	<div class="container-fluid padding jumbo-img-foot" id="footer">
+		<div id="vertical-line-4"></div> 
+
 	<div class="row text-center">
 		<div class="col-12">
 		<p>&#169 2019 Angelina Opoku. All rights reserved.</p>
 		</div>
 	</div>
 	</div>
+
+	<div id="vertical-line-5"></div> 
 </footer>
 
 

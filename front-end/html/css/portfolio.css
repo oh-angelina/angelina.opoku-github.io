@@ -40,7 +40,7 @@ body, html {
     margin: .5em auto; 
     width: 60%
 }
-.vertical-line {
+#vertical-line-1 {
   border-left: 2px solid #fff;
   height: 36%;
   position: absolute;
@@ -80,7 +80,7 @@ body, html {
 /*Project Section*/
 
 #project-section {
-	background-image: url("https://images.pexels.com/photos/1156684/pexels-photo-1156684.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+	background-image: url("https://images.pexels.com/photos/1242348/pexels-photo-1242348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 	background-size: cover;		
 	padding: 6em 0 2em 0 ;
 	background-attachment: fixed;
@@ -88,8 +88,8 @@ body, html {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 150vh;
-	max-height: 60em;
-	min-height: 22em;
+	max-height: 70em;
+	min-height: 30em;
 	position: relative;
 	margin-bottom: 0;  
 }
@@ -108,26 +108,37 @@ body, html {
 	text-align: center;
 	z-index: 10;
 }
-.projects {
-	bottom: 40%;
-	height: 100%
+#projects {
+	bottom: 30%;
+	height: 100%;
 	width: 100%;
 	padding: 2em; 
-
 }
-
 .project-img {
-	height: 5em;
-	width: 7em; 
+	height: 7em;
+	width: 10em; 
 	margin: 1em; 
+	cursor: pointer;
 }
-
+#vertical-line-2 {
+  border-left: 2px solid #fff;
+  height: 10%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+#vertical-line-3 {
+  border-left: 2px solid #fff;
+  height: 70%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  bottom: 0;
+}
 
 /*Scrolling Nav Buttons*/
-#navigation {	
-	background-color: #fbac53; 
 
-}
 
 
 /*Footer*/
@@ -139,10 +150,26 @@ body, html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 1vh;
-	max-height: 3em;
+	height: .05vh;
+	max-height: 1em;
 	min-height: .5em;
 	position: relative;
 	margin-top: 0; 
 	margin-bottom: 0; 
 }
+#vertical-line-4 {
+  border-left: 2px solid #fff;
+  height: 20%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+/*#vertical-line-5 {
+  border-left: 2px solid #fff;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  bottom: 0;
+}*/

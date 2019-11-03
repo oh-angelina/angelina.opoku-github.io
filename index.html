@@ -2,20 +2,30 @@
 	- fix footer line problem
 	- create a modal template for projects
 	-create a resume template 
-	-upload sample resume template
-	- make sure that picutre and text reduce padding as they shrink
-	- increase padding between picture and text
+	-upload updated resume 
 	- pick fonts
 	- get projects to line up correctly
-	- reduce margins on projects
 	- create horizontal lines that connect projects
 	- shrink footer
 	- create contact form
 	- add a sliding navbar of github, linkedin, email, and resume
 	- add button that shows that contact me form is not yet enabled
 
+	about
+	- consitent color theme with gray and mauve
+
+	projects
+	- host! link to code pen is  prob easiest
+
 	Next Steps
 	- add in cool transition animations after wathcing some more javascript tutorials
+		- welcome
+			- type "welcome" on load
+			- have "about me" button slow glide to next section (and if possible, center)
+		- about
+			- nav icons scroll in from the left
+			- slow transition on "my work" click
+
 	- set it up so that contact form sends to me and alerts user that feedback was sent 
 	- build some projects, upload, and more
 
@@ -43,7 +53,7 @@
 <section class="jumbotron jumbotron-fluid padding text-center welcome jumbo-img">
 <div class="container jumbo-text">	
   	<header class="col-12">
-		<h1 class="display-4" id="title">ANGELINA OPOKU</h1>
+		<h1 class="display-4" id="title">Angelina Opoku</h1>
 	</header>
 	<hr class="title-break">
 	<hr class="title-break">
@@ -51,55 +61,37 @@
 		<p class="lead" id="sub-title">Welcome to my Portfolio</p>
 	</div>	
 	<div class="col-12">
-		<a href="#about-section"><button type="button" class="btn btn-outline-light btn-lg" id="about-button">About Me</button></a>
+		<div class="col-12 contact-icons">
+			<a href="https://www.linkedin.com/in/angelina-opoku/" target="_blank"><i class="fab fa-linkedin-in fa-2x" data-toggle="tooltip" data-placement="bottom" title="LinkedIn Profile"></i></a>
+			<a href="./files/A.Opoku-Test-Resume.pdf" download target="_blank"><i class="far fa-file fa-2x" data-toggle="tooltip" data-placement="bottom" title="View Resume"></i></a>
+		    <a href="#contact-section"><i class="far fa-envelope fa-2x" data-toggle="tooltip" data-placement="bottom" title="Contact Me"></i></a>
+		    <a href="https://codepen.io/oh-angelina"><i class="fab fa-codepen fa-2x" data-toggle="tooltip" data-placement="bottom" title="CodePen Profile"></i></a>
+		    <a href="#project-section"><i class="fas fa-code fa-2x" data-toggle="tooltip" data-placement="bottom" title="My Projects"></i></a>
+		    <a href="https://github.com/oh-angelina" target="_blank"><i class="fab fa-github fa-2x" data-toggle="tooltip" data-placement="bottom" title="GitHub Profile"></i></a>
+		  </div>
+
+		  <a href="#about-section"><button type="button" class="btn btn-outline-light btn-lg" id="about-button">About Me</button></a>
 	</div>
 </div>
 	<div id="vertical-line-1"></div> 
 </section>
 
-<!-- Navigation Icons -->
-
-<!-- <nav class="navbar navbar-expand-md navbar-light navbar-custom sticky-top" id="navigation">
-	<div class="container-fluid">
-  <a class="navbar-brand" href="index.html"><div class="fake-logo">ANGELINA OPOKU</div></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-</div>
-  </div>
-</nav> -->
 
 <!-- About Me Section -->
-<section id="about-section" class="container-fluid padding text-center">
-<div class="row padding" id="about-card">
+
+<section id="about-section" class="container-fluid padding">
+<div class="row padding text-center " id="about-card">
+
 	<div class="col-12"id="about-card-description">
+
+
 			<h2 class="heading">Problem Solver and Full Stack Software Developer</h2>
 			<hr class="mini-break">
 			<p class="lead">I am a detail oriented developer and data scientist fluent in Java, HTML, CSS, SQL, and more.</p>
-			<p class="lead">Since completing my Masters in Public Administration, I have been focused on developing the skills needed to be a great devloper. I have always had a great eye for detail and enjoy solving problems, and now use these same skills in software development.</p>	
+			<p class="lead">Since completing my Masters in Public Administration, I have been focused on developing the skills needed to be a great devloper.
+			<br> I have always had a great eye for detail and enjoy solving problems, and now use these same skills in software development.</p>	
 
-		  <div class="col-12 contact-icons">
-		      <a href="https://www.linkedin.com/in/angelina-opoku/" target="_blank"><i class="fab fa-linkedin"></i></a>
-		      <a href="./files/A.Opoku-Test-Resume.pdf" download target="_blank"><i class="fas fa-file"></i></a>
-		      <a href="#contact-section"><i class="fas fa-envelope"></i></a>
-		      <a href="https://github.com/oh-angelina" target="_blank"><i class="fab fa-github-square"></i></a>
-		    </div>	
+		  
 	</div>
 
 	<div class="col-12">
@@ -136,7 +128,7 @@
 <!-- Project Decks -->
 
 
-			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 col-xl-4 projects">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project1">
 			</div>
 
@@ -162,7 +154,7 @@
 				</div>
 	
 
-			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 col-xl-4 projects">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project2">
 			</div>
 
@@ -187,7 +179,7 @@
 				  </div>
 				</div>			
 
-			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 col-xl-4  projects">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4  projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project3">
 			</div>
 
@@ -212,7 +204,7 @@
 				  </div>
 				</div>			
 
-			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 col-xl-4 projects">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project4">
 			</div>
 
@@ -237,7 +229,7 @@
 				  </div>
 				</div>			
 
-			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 col-xl-4 projects">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project5">
 			</div>
 
@@ -262,7 +254,7 @@
 				  </div>
 				</div>			
 
-			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 col-xl-4 projects">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project6">
 			</div>
 

@@ -1,7 +1,7 @@
 
 /*Welcome*/
 .jumbo-img{
-	background-image: url("https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background: url(../images/cover.jpeg) bottom center no-repeat;
 	background-size: cover;		
 	padding: 6rem 0 2rem 0 ;
 	background-attachment: fixed;
@@ -30,13 +30,31 @@
 }
 #title {
 	margin: 1rem;
+	font-size: 4rem;
+	font-weight: bold;
 }
 #sub-title {
 	font-size: 1.5rem; 
+	font-weight: bold;
+}
+.contact-icons {	
+	margin: 0 auto;
+	width: 100%;
+	padding: 0;
+	}
+.contact-icons i{
+	color: #6f6f8b;
+	color: white;
+	/*font-size: 1.75rem;*/
+	height: auto;
+	margin: 0 1rem 0 1rem; 
+}
+.contact-icons i:hover{
+	transform:scale(1.1);
 }
 .title-break {
     border: 0;
-    height: 2px;
+    height: 4px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
     margin: .7em auto; 
     width: 60%
@@ -45,7 +63,8 @@
 	margin: 1rem; 
 	padding: .7rem 2rem .7rem 2rem;
 	font-size: 1rem;
-	background-color: white; 
+	background-color: white;
+	font-weight: bold; 
 	color: #424242;
 	border-radius: 3rem;
 }
@@ -73,14 +92,18 @@
 }
 
 /*About Section*/
-
 #about-section {
 	margin-top: -.25em; 
 	padding: 5em; 
-	background: white;
+
+	height: 500px;
+
+	background: url(../images/white-pattern.jpg) bottom center no-repeat;
+	background-size: cover;	
+
+
 }
 #about-card {
-	background-color: white; 
 	margin: 2.5em; 
 }
 #about-card-description {
@@ -98,22 +121,6 @@
     background-image: linear-gradient(to right, rgba(150, 150, 150, 0), rgba(150, 150, 150, 0.75), rgba(150, 150, 150, 0));
     margin: 1em auto; 
     width: 60%
-}
-.contact-icons {
-	border: .25rem solid #6f6f8b;
-	border-radius: 2rem;	
-	width: 40vw; 
-	height: auto;
-	margin: 0 auto;
-	}
-.contact-icons i{
-	color: #6f6f8b;
-	font-size: 3rem;
-	height: auto;
-	margin: 1rem; 
-}
-.contact-icons i:hover{
-	transform:scale(1.1);
 }
 #purple-line-1 {
   border-left: 3px solid #6f6f8b;

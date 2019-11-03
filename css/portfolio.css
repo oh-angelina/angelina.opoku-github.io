@@ -3,47 +3,73 @@
 .jumbo-img{
 	background-image: url("https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 	background-size: cover;		
-	padding: 6em 0 2em 0 ;
+	padding: 6rem 0 2rem 0 ;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
-	height: 95vh;
-	max-height: 40em;
-	min-height: 22em;
+	height: 100vh;
+	max-height: 60rem;
+	min-height: 25rem;
 	position: relative;
 	margin-bottom: 0;  
 }
 .jumbo-text{
 	background-color: rgb(0,0,0); /* Fallback color */
-  	background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+  	background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
 	color: white;
 	font-weight: bold;
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	height: 100%
-	width: 80%;
-	padding: 20px;
+	width: 70%;
+	padding: 2rem;
 	text-align: center;
 	z-index: 10; 
+}
+#title {
+	margin: 1rem;
+}
+#sub-title {
+	font-size: 1.5rem; 
 }
 .title-break {
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-    margin: .5em auto; 
+    margin: .7em auto; 
     width: 60%
+}
+#about-button {
+	margin: 1rem; 
+	padding: .7rem 2rem .7rem 2rem;
+	font-size: 1rem;
+	background-color: white; 
+	color: #424242;
+	border-radius: 3rem;
+}
+#about-button:hover {
+	background-color: white;
+	color: white;
+	animation-name: about-button-color;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	transform:scale(1.1);
+}
+@keyframes about-button-color {
+	100% {
+		background-color: transparent; 
+	}
 }
 #vertical-line-1 {
   border-left: 3px solid #fff;
-  height: 36%;
+  height: 38.5%;
   position: absolute;
   left: 50%;
   margin-left: -3px;
   bottom: 0;
-  z-index: 5; 
+  z-index: 10; 
 }
 
 /*About Section*/
@@ -60,6 +86,7 @@
 #about-card-description {
 }
 .heading {
+	color: #6f6f8b
 	font-size: 2.2em; 
 }
 .lead {
@@ -68,22 +95,68 @@
 .mini-break {
     border: 0;
     height: 2px;
-    background-image: linear-gradient(to right, rgba(150, 150, 150, 1), rgba(150, 150, 150, 0.35), rgba(150, 150, 150, 0));
-    margin: 2em auto; 
+    background-image: linear-gradient(to right, rgba(150, 150, 150, 0), rgba(150, 150, 150, 0.75), rgba(150, 150, 150, 0));
+    margin: 1em auto; 
     width: 60%
-    left: 0;
+}
+.contact-icons {
+	border: .25rem solid #6f6f8b;
+	border-radius: 2rem;	
+	width: 40vw; 
+	height: auto;
+	margin: 0 auto;
+	}
+.contact-icons i{
+	color: #6f6f8b;
+	font-size: 3rem;
+	height: auto;
+	margin: 1rem; 
+}
+.contact-icons i:hover{
+	transform:scale(1.1);
+}
+#purple-line-1 {
+  border-left: 3px solid #6f6f8b;
+  height: 11%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  bottom: 0;
+  z-index: 2; 
+}
+
+#project-button {
+	margin: 1rem; 
+	padding: .7rem 2rem .7rem 2rem;
+	font-size: 1rem;
+	background-color: #A4A4A4; 
+	color: white;
+	border-radius: 3rem;
+}
+#project-button:hover {
+	background-color: #FAFAFA; 
+	color: #A4A4A4;	
+	animation-name: button-color;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	transform:scale(1.1);
+}
+@keyframes button-color {
+	100% {
+	background-color: #D8D8D8;
+	color: #585858;
+	}
 }
 
 /*Project Section*/
 
 #project-section {
-	background-image: url("https://images.unsplash.com/photo-1496517343266-e95a6e214de7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
+	background-image: url("https://images.unsplash.com/photo-1523349945440-436fbc94fdde?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
 	background-size: cover;	
 	padding: 6em 0 2em 0 ;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
 	height: 150vh;
 	max-height: 70em;
 	min-height: 30em;
@@ -92,7 +165,7 @@
 }
 #project-header {
 	background-color: rgb(0,0,0); /* Fallback color */
-  	background-color: rgba(0,0,0, 0.3); /* Black w/opacity/see-through */
+  	background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
 	color: white;
 	font-weight: bold;
 	position: absolute;
@@ -153,7 +226,6 @@
   bottom: 30%;
   z-index: ;
 }
-/*Scrolling Nav Buttons*/
 
 
 
@@ -165,7 +237,6 @@
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
 	height: .05vh;
 	max-height: 1em;
 	min-height: .5em;

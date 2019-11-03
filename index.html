@@ -43,15 +43,15 @@
 <section class="jumbotron jumbotron-fluid padding text-center welcome jumbo-img">
 <div class="container jumbo-text">	
   	<header class="col-12">
-		<h1 class="display-4 title">Hi, I'm Angelina!</h1>
+		<h1 class="display-4" id="title">ANGELINA OPOKU</h1>
 	</header>
 	<hr class="title-break">
 	<hr class="title-break">
 	<div class="col-12 text-center">
-		<p class="lead">Welcome to my Portfolio</p>
+		<p class="lead" id="sub-title">Welcome to my Portfolio</p>
 	</div>	
 	<div class="col-12">
-		<a href="#about-section"><button type="button" class="btn btn-outline-light">About Me</button></a>
+		<a href="#about-section"><button type="button" class="btn btn-outline-light btn-lg" id="about-button">About Me</button></a>
 	</div>
 </div>
 	<div id="vertical-line-1"></div> 
@@ -86,51 +86,32 @@
 </nav> -->
 
 <!-- About Me Section -->
-<section id="about-section" class="container-fluid padding">
+<section id="about-section" class="container-fluid padding text-center">
 <div class="row padding" id="about-card">
-	<div class="col-lg-4 profile-pic">
-		<img class="img-fluid" src="images/Angelina1.jpg" alt="Angelina">
-	</div>
-	<div class="col-lg-8"id="about-card-description">
-			<h2 class="heading">I'm a problem solver and software developer</h2>
+	<div class="col-12"id="about-card-description">
+			<h2 class="heading">Problem Solver and Full Stack Software Developer</h2>
 			<hr class="mini-break">
-			<p class="lead">My name is Angelina Opoku and I am a detail oriented back end developer and data scientist fluent in Java, HTML, CSS, SQL, and more.</p>
-			<p class="lead">Since completing my Masters in Public Administration, I have been focused on developing the skills needed to be a great devloper. I have always had a great eye for detail and enjoyed solving problems, and have now use these same skills in software development.</p>
+			<p class="lead">I am a detail oriented developer and data scientist fluent in Java, HTML, CSS, SQL, and more.</p>
+			<p class="lead">Since completing my Masters in Public Administration, I have been focused on developing the skills needed to be a great devloper. I have always had a great eye for detail and enjoy solving problems, and now use these same skills in software development.</p>	
 
-			<!-- Button to trigger Resume modal -->
-			<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#resumeModal">
-			  Resume
-			</button>
-
-			<!-- Resume Modal -->
-			<div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeTitle" aria-hidden="true">
-			  <div class="modal-dialog modal-dialog-centered" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h5 class="modal-title" id="resumeTitle">Resume</h5>
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			          <span aria-hidden="true">&times;</span>
-			        </button>
-			      </div>
-			      <div class="modal-body">
-			        ...
-			      </div>
-			      <div class="modal-footer">
-			    	<button type="button" class="btn btn-primary">Download Resume</button>
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-
-			<!-- Contact Me and Projects buttons -->
-			<a href="#contact-section"><button type="button" class="btn btn-outline-primary">Contact Me</button></a>
-			<a href="#project-section"><button type="button" class="btn btn-outline-dark">My Work</button></a>
-			
+		  <div class="col-12 contact-icons">
+		      <a href="https://www.linkedin.com/in/angelina-opoku/" target="_blank"><i class="fab fa-linkedin"></i></a>
+		      <a href="./files/A.Opoku-Test-Resume.pdf" download target="_blank"><i class="fas fa-file"></i></a>
+		      <a href="#contact-section"><i class="fas fa-envelope"></i></a>
+		      <a href="https://github.com/oh-angelina" target="_blank"><i class="fab fa-github-square"></i></a>
+		    </div>	
 	</div>
-	
-</div>
+
+	<div class="col-12">
+		<a href="#project-section"><button type="button" class="btn btn-outline-light btn-lg" id="project-button">My Work</button></a>
+	</div>
+
+
+</div>	  	
+<div id="purple-line-1"></div> 
+
 </section>
+
 
 <!-- Project Section -->
 <section class="container-fluid padding" id="project-section">
@@ -315,7 +296,7 @@
 
 <!-- Contact Me Icons-->
 <div class="container-fluid padding">
-	<div class=" say-hi row text-center padding">
+	<div class="say-hi row text-center padding" id="contact-section">
 		<div class="col-12">
 			<h2>Stop by and say hello!</h2>
 		</div>
@@ -341,40 +322,16 @@
 </div>
 
 
-<!-- Will move later, Programming tools -->
-<div class="container-fluid padding">
-<div class="row text-center padding">
-	<div class="col-12">
-		<h2>Programming Languages and Tools Used</h2>
-	</div> 
-    <div class="col-12 toolkit">
-      <i class="fab fa-java"></i>
-      <i class="fab fa-js-square"></i>
-      <i class="fab fa-html5"></i>
-      <i class="fab fa-css3-alt"></i>
-      <i class="fab fa-node-js"></i>
-      <i class="fab fa-react"></i>
-      <i class="fab fa-python"></i>
-      <i class="fab fa-linux"></i>
-      <i class="fab fa-ubuntu"></i>
-      <i class="fab fa-github"></i>
-      <i class="fab fa-npm"></i>
-      <i class="fab fa-git-square"></i>
-      <i class="fab fa-bootstrap"></i>
-    </div> 
-</div>
-</div>
-
 <!-- Footer -->
 <footer>
-	<div class="container-fluid padding jumbo-img-foot text-center" id="footer">
-		<div id="vertical-line-4"></div> 
-
+	<div class="container-fluid padding jumbo-img-foot" id="footer">
 	<div class="row text-center margin-free-row">
 		<p>&#169 2019 Angelina Opoku. All rights reserved.</p>
 	</div>
-
+	
+	<div id="vertical-line-4"></div> 
 	<div id="vertical-line-5"></div> 
+
 </div>
 </footer>
 
@@ -382,14 +339,14 @@
 
 <!-- Link to Icons-->
 <script src="https://kit.fontawesome.com/55353ac916.js" crossorigin="anonymous"></script>
+
 <!-- Javascripts needed for Bootstrap-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 <!-- Link to Local JavaScripts-->
 <script src="js/portfolio.js" ></script>
-<!-- <script src="js/portfolio.js"></script>
- -->
 
 </body>
 </html>

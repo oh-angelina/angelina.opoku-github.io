@@ -1,18 +1,12 @@
 <!-- To Do
 	- fix footer line problem
 	- create a modal template for projects
-	-create a resume template 
 	-upload updated resume 
 	- pick fonts
-	- get projects to line up correctly
-	- create horizontal lines that connect projects
 	- shrink footer
 	- create contact form
 	- add a sliding navbar of github, linkedin, email, and resume
 	- add button that shows that contact me form is not yet enabled
-
-	about
-	- consitent color theme with gray and mauve
 
 	projects
 	- host! link to code pen is  prob easiest
@@ -20,12 +14,12 @@
 	Next Steps
 	- add in cool transition animations after wathcing some more javascript tutorials
 		- welcome
-			- type "welcome" on load
+			- type "icons" on load
 			- have "about me" button slow glide to next section (and if possible, center)
 		- about
 			- nav icons scroll in from the left
 			- slow transition on "my work" click
-
+	- add white lines back in
 	- set it up so that contact form sends to me and alerts user that feedback was sent 
 	- build some projects, upload, and more
 
@@ -45,29 +39,30 @@
 	
 	<!-- Link to Local Stylesheet-->
 	<link rel="stylesheet" href="css/portfolio.css">
+
+
 </head>
 <body>
 
 
 <!-- Welcome -->
 <section class="jumbotron jumbotron-fluid padding text-center welcome jumbo-img">
-<div class="container-fluid jumbo-text">	
+<div class="container jumbo-text">	
   	<header class="col-12">
 		<h1 class="display-4" id="title">Angelina Opoku</h1>
 	</header>
-	<hr class="title-break">
-	<hr class="title-break">
-	<div class="col-12 text-center">
-		<p class="lead" id="sub-title">Welcome to my Portfolio</p>
-	</div>	
+ 	<hr class="title-break-1">
+ 	<hr class="title-break-2">
+	
 		<div class="col-12 col-xs-6 contact-icons">
-			<a href="https://www.linkedin.com/in/angelina-opoku/" target="_blank"><i class="fab fa-linkedin-in fa-2x" data-toggle="tooltip" data-placement="bottom" title="LinkedIn Profile"></i></a>
-			<a href="./files/A.Opoku-Test-Resume.pdf" download target="_blank"><i class="far fa-file fa-2x" data-toggle="tooltip" data-placement="bottom" title="View Resume"></i></a>
-		    <a href="#contact-section"><i class="far fa-envelope fa-2x" data-toggle="tooltip" data-placement="bottom" title="Contact Me"></i></a>
-		    <a href="https://codepen.io/oh-angelina"><i class="fab fa-codepen fa-2x" data-toggle="tooltip" data-placement="bottom" title="CodePen Profile"></i></a>
-		    <a href="#project-section"><i class="fas fa-code fa-2x" data-toggle="tooltip" data-placement="bottom" title="My Projects"></i></a>
-		    <a href="https://github.com/oh-angelina" target="_blank"><i class="fab fa-github fa-2x" data-toggle="tooltip" data-placement="bottom" title="GitHub Profile"></i></a>
+			<a href="https://www.linkedin.com/in/angelina-opoku/" target="_blank"><i class="fab fa-linkedin-in fa-lg" data-toggle="tooltip" data-placement="bottom" title="LinkedIn Profile"></i></a>
+			<a href="./files/A.Opoku-Test-Resume.pdf" download target="_blank"><i class="far fa-file fa-lg" data-toggle="tooltip" data-placement="bottom" title="View Resume"></i></a>
+		    <a href="#contact-section"><i class="far fa-envelope fa-lg" data-toggle="tooltip" data-placement="bottom" title="Contact Me"></i></a>
+		    <a href="https://codepen.io/oh-angelina"><i class="fab fa-codepen fa-lg" data-toggle="tooltip" data-placement="bottom" title="CodePen Profile"></i></a>
+		    <a href="#project-section"><i class="fas fa-code fa-lg" data-toggle="tooltip" data-placement="bottom" title="My Projects"></i></a>
+		    <a href="https://github.com/oh-angelina" target="_blank"><i class="fab fa-github fa-lg" data-toggle="tooltip" data-placement="bottom" title="GitHub Profile"></i></a>
 		  </div>
+
 
 		  <a href="#about-section"><button type="button" class="btn btn-outline-light btn-lg" id="about-button">About Me</button></a>
 </div>
@@ -79,12 +74,13 @@
 <section id="about-section" class="container-fluid padding">
 <div class="row padding text-center" id="about-card">
 
-	<div class="col-12"id="about-card-description">
-			<h2 id="about-heading">Problem Solver and Full Stack Software Developer</h2>
-			<hr class="mini-break">
-			<p class="lead">I am a detail oriented developer and data scientist fluent in Java, HTML, CSS, SQL, and more.</p>
-			<p class="lead">Since completing my Masters in Public Administration, I have been focused on developing the skills needed to be a great devloper.
-			<br> I have always had a great eye for detail and enjoy solving problems, and now use these same skills in software development.</p>		  
+	<div class="col-12" id="about-card-description">
+		<h2 id="about-heading">Problem Solver and Full Stack Software Developer</h2>
+		<hr class="mini-break">
+		<p class="lead">I am a detail oriented developer and data scientist fluent in Java, HTML, CSS, SQL, and more.</p>
+		<p class="lead">Since completing my Masters in Public Administration, I have been focused on developing the skills needed to be a great devloper.
+		<br>
+		I have always had a great eye for detail and enjoy solving problems, and now use these same skills in software development.</p>		  
 	</div>
 
 	<div class="col-12">
@@ -110,7 +106,7 @@
 
 <!-- Project Deck -->
 
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 projects">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project1">
 			</div>
 
@@ -136,7 +132,7 @@
 				</div>
 	
 
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 projects">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project2">
 			</div>
 
@@ -161,7 +157,7 @@
 				  </div>
 				</div>			
 
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 d-none d-sm-block projects">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-none d-sm-block projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project3">
 			</div>
 
@@ -186,7 +182,7 @@
 				  </div>
 				</div>			
 
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 d-none d-sm-block projects">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-none d-sm-block projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project4">
 			</div>
 
@@ -211,7 +207,7 @@
 				  </div>
 				</div>			
 
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 d-none d-md-block projects">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-none d-lg-block projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project5">
 			</div>
 
@@ -236,7 +232,7 @@
 				  </div>
 				</div>			
 
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 d-none d-md-block projects">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-none d-lg-block projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project6">
 			</div>
 
@@ -274,7 +270,61 @@
 		<div class="col-12">
 			<h2>Stop by and say hello!</h2>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-4">
+
+
+<form class="needs-validation col-12" novalidate>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom01">Name</label>
+      <input type="text" class="form-control" id="validationCustom01" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom02">Email</label>
+      <input type="text" class="form-control" id="validationCustom02" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+  </div>
+    <div class="mb-3">
+    <label for="validationTextarea">Textarea</label>
+    <textarea class="form-control" id="validationTextarea" required></textarea>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+
+
+
+
+		<!-- <div class="col-xs-12 col-sm-6 col-md-4">
 			<a href="https://github.com/oh-angelina/Git-Projects" target="_blank"><i class="fab fa-github contact-icon" alt="GitHub"></i></a>
 			<h3>GitHub</h3>
 			<p>Come and see all of the different project's I've been working on!</p>
@@ -288,10 +338,8 @@
 			<a href="https://www.linkedin.com/in/angelina-opoku/"target="_blank"><i class="fab fa-linkedin contact-icon" alt="LinkedIn"></i></a>
 			<h3>LinkedIn</h3>
 			<p>Let's Connect! This is a great place to learn more about my work</p>
-		</div>
-		<div class="col-12">
-			<a href="contact.html"><button type="button" class="btn btn-outline-primary">Contact Me</button></a>
-		</div>
+		</div> -->
+
 	</div>
 </div>
 
@@ -309,9 +357,7 @@
 </div>
 </footer>
 
-
-
-<!-- Link to Icons-->
+	<!-- Link to Icons-->
 <script src="https://kit.fontawesome.com/55353ac916.js" crossorigin="anonymous"></script>
 
 <!-- Javascripts needed for Bootstrap-->
@@ -321,6 +367,8 @@
 
 <!-- Link to Local JavaScripts-->
 <script src="js/portfolio.js" ></script>
+
+
 
 </body>
 </html>

@@ -3,10 +3,7 @@
 .jumbo-img{
 	background: url(../images/cover.jpeg) bottom center no-repeat;
 	background-size: cover;		
-	padding: 6rem 0 2rem 0 ;
 	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
 	height: 100vh;
 	max-height: 60rem;
 	min-height: 25rem;
@@ -15,51 +12,53 @@
 }
 .jumbo-text{
 	background-color: rgb(0,0,0); /* Fallback color */
-  	background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
+  	background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
 	color: white;
-	font-weight: bold;
 	position: absolute;
-	top: 45%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 70vw;
-	padding: 2rem;
+	padding: .5rem;
 	text-align: center;
 	z-index: 10; 
 }
 #title {
 	margin: 1rem;
-	font-size: 4rem;
-	font-weight: bold;
+	font-size: 3.5rem;
+	font-weight: 300;
+    line-height: 1.2;
 }
-#sub-title {
-	font-size: 1.5rem; 
-	font-weight: bold;
+.title-break-1 {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    margin: .7em auto; 
+    width: 60%
+}
+.title-break-2 {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    margin: .7em auto; 
+    margin-bottom: 1.5rem;
+    width: 70%
 }
 .contact-icons {	
 	margin: 0 auto;
 	width: 100%;
 	padding: 0;
-	}
+}
 .contact-icons i{
 	color: #6f6f8b;
 	color: white;
-	/*font-size: 1.75rem;*/
 	height: auto;
 	margin: 0 1rem 0 1rem; 
 }
 .contact-icons i:hover{
 	transform:scale(1.1);
 }
-.title-break {
-    border: 0;
-    height: 4px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-    margin: .7em auto; 
-    width: 60%
-}
 #about-button {
-	margin: 1rem; 
+	margin: 2rem 0 1rem 0; 
 	padding: .7rem 2rem .7rem 2rem;
 	font-size: 1rem;
 	background-color: white;
@@ -91,8 +90,6 @@
 }
 #about-card {
 	margin: 2.5em; 
-}
-#about-card-description {
 }
 #about-heading {
 	color: #6f6f8b
@@ -135,14 +132,14 @@
 /*Project Section*/
 
 #project-section {
-	background: url(https://images.unsplash.com/photo-1505985518385-c4e867fcaf82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80) bottom center no-repeat;
+	background: url(../images/gray-pattern.jpg) bottom center no-repeat;
 	background-size: cover;	
-	padding: 6em 0 2em 0 ;
+	padding: 2rem 0 2rem 0 ;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 150vh;
-	max-height: 70em;
+	height: 120vh;
+	max-height: 60rem;
 	min-height: 30em;
 	position: relative;
 	margin-bottom: 0;  
@@ -164,9 +161,9 @@
 	z-index: 10; 
 }
 .project-img {
-	height: 15em;
-	width: 13em; 
-	margin: 2em auto; 
+	height: 13rem;
+	width: 15rem; 
+	margin: 2rem auto; 
 	z-index: 10; 
 	cursor: pointer;
 }

@@ -10,5 +10,7 @@ $(document).ready(function(){
 var today = new Date();
 var year = today.getFullYear();
 
-var el = document.getElementById("footer");
-el.innerHTML = "<p> &copy;" + year + " Angelina Opoku. All rights reserved.</p>"; 
+var copyright = document.getElementById("footer");
+copyright.innerHTML = "<p> &copy;" + year + " Angelina Opoku. All rights reserved.</p>"; 
+
+

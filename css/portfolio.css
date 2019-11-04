@@ -1,12 +1,16 @@
 
 /*Welcome*/
 .jumbo-img{
-	background: url(../images/cover.jpeg) bottom center no-repeat;
+	background-image: url("https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 	background-size: cover;		
+	padding: 6em 0 2em 0 ;
 	background-attachment: fixed;
-	height: 100vh;
-	max-height: 60rem;
-	min-height: 25rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 95vh;
+	max-height: 40em;
+	min-height: 22em;
 	position: relative;
 	margin-bottom: 0;  
 }
@@ -14,70 +18,32 @@
 	background-color: rgb(0,0,0); /* Fallback color */
   	background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
 	color: white;
+	font-weight: bold;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	padding: .5rem;
+	height: 100%
+	width: 80%;
+	padding: 20px;
 	text-align: center;
 	z-index: 10; 
 }
-#title {
-	margin: 1rem;
-	font-size: 3.5rem;
-	font-weight: 300;
-    line-height: 1.2;
-}
-.title-break-1 {
+.title-break {
     border: 0;
-    height: 3px;
+    height: 2px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-    margin: .7em auto; 
+    margin: .5em auto; 
     width: 60%
 }
-.title-break-2 {
-    border: 0;
-    height: 3px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-    margin: .7em auto; 
-    margin-bottom: 1.5rem;
-    width: 70%
-}
-.contact-icons {	
-	margin: 0 auto;
-	width: 100%;
-	padding: 0;
-}
-.contact-icons i{
-	color: #6f6f8b;
-	color: white;
-	height: auto;
-	margin: 0 1rem 0 1rem; 
-}
-.contact-icons i:hover{
-	transform:scale(1.1);
-}
-#about-button {
-	margin: 2rem 0 1rem 0; 
-	padding: .7rem 2rem .7rem 2rem;
-	font-size: 1rem;
-	background-color: white;
-	font-weight: bold; 
-	color: #424242;
-	border-radius: 3rem;
-}
-#about-button:hover {
-	background-color: white;
-	color: white;
-	animation-name: about-button-color;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-	transform:scale(1.1);
-}
-@keyframes about-button-color {
-	100% {
-		background-color: transparent; 
-	}
+#vertical-line-1 {
+  border-left: 3px solid #fff;
+  height: 36%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  bottom: 0;
+  z-index: 5; 
 }
 
 /*About Section*/
@@ -85,16 +51,16 @@
 #about-section {
 	margin-top: -.25em; 
 	padding: 5em; 
-/*	background: url(../images/white-background.jpg) bottom center no-repeat;
-	background-size: cover;*/	
+	background: white;
 }
 #about-card {
+	background-color: white; 
 	margin: 2.5em; 
 }
-#about-heading {
-	color: #6f6f8b
+#about-card-description {
+}
+.heading {
 	font-size: 2.2em; 
-	text-shadow: 2px 2px 4px silver;
 }
 .lead {
 	font-size: 1.05em; 
@@ -102,74 +68,95 @@
 .mini-break {
     border: 0;
     height: 2px;
-    background-image: linear-gradient(to right, rgba(150, 150, 150, 0), rgba(150, 150, 150, 0.75), rgba(150, 150, 150, 0));
-    margin: 1em auto; 
+    background-image: linear-gradient(to right, rgba(150, 150, 150, 1), rgba(150, 150, 150, 0.35), rgba(150, 150, 150, 0));
+    margin: 2em auto; 
     width: 60%
-}
-#project-button {
-	margin: 1rem; 
-	padding: .7rem 2rem .7rem 2rem;
-	font-size: 1rem;
-	background-color: #A4A4A4; 
-	color: white;
-	border-radius: 3rem;
-}
-#project-button:hover {
-	background-color: #FAFAFA; 
-	color: #A4A4A4;	
-	animation-name: button-color;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-	transform:scale(1.1);
-}
-@keyframes button-color {
-	100% {
-	background-color: #D8D8D8;
-	color: #585858;
-	}
+    left: 0;
 }
 
 /*Project Section*/
 
 #project-section {
-	background: url(../images/gray-pattern.jpg) bottom center no-repeat;
-	background-size: cover;	
-	padding: 2rem 0 2rem 0 ;
+	background-image: url("https://images.pexels.com/photos/1242348/pexels-photo-1242348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;		
+	padding: 6em 0 2em 0 ;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 120vh;
-	max-height: 60rem;
+	background-size: cover;
+	height: 150vh;
+	max-height: 70em;
 	min-height: 30em;
 	position: relative;
 	margin-bottom: 0;  
 }
-#project-header {
-	color: black;
-	font-weight: bold;
-	width: 80%;
-	padding: 1rem;
-	margin: 1rem auto;
-	text-align: center;
-	z-index: 10;
-}
 .margin-free-row {
 	margin: 0px auto; 
 }
+#project-header {
+	background-color: rgb(0,0,0); /* Fallback color */
+  	background-color: rgba(0,0,0, 0.3); /* Black w/opacity/see-through */
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 100%
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	z-index: 10;
+}
 .projects {
-	margin: 0.5rem auto; 
-	z-index: 10; 
+	top: 15em;
+	margin: 0 auto; 
+	z-index: 8; 
 }
 .project-img {
-	height: 13rem;
-	width: 15rem; 
-	margin: 2rem auto; 
-	z-index: 10; 
+	height: 15em;
+	width: 13em; 
+	margin: 2em auto; 
 	cursor: pointer;
 }
+#vertical-line-2 {
+  border-left: 3px solid #fff;
+  height: 11%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+  z-index: 5; 
+}
+#vertical-line-3 {
+  border-left: 3px solid #fff;
+  height: 71%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  bottom: 0;
+  z-index: 5;
+}
+#horizontal-line-1 {
+  border-top: 3px solid #fff;
+  width: 70%;
+  position: absolute;
+  bottom: 50%;
+  z-index: 5;
+}
+#horizontal-line-2 {
+  border-top: 3px solid #fff;
+  width: 100%;
+  position: absolute;
+  margin-left: -3px;
+  bottom: 30%;
+  z-index: 5;
+}
+/*Scrolling Nav Buttons*/
+
+
 
 /*Footer*/
-
 .jumbo-img-foot{
 	background-image: url("https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 	background-size: cover;		
@@ -177,6 +164,7 @@
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
 	height: .05vh;
 	max-height: 1em;
 	min-height: .5em;
@@ -184,3 +172,19 @@
 	margin-top: 0; 
 	margin-bottom: 0; 
 }
+#vertical-line-4 {
+  border-left: 3px solid #fff;
+  height: 20%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+/*#vertical-line-5 {
+  border-left: 3px solid #fff;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  bottom: 0;
+}*/

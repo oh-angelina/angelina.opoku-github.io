@@ -38,7 +38,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Testing</title>
+	<title>Angelina Opoku</title>
 
 	<!-- Link to Bootstrap-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -51,7 +51,7 @@
 
 <!-- Welcome -->
 <section class="jumbotron jumbotron-fluid padding text-center welcome jumbo-img">
-<div class="container jumbo-text">	
+<div class="container-fluid jumbo-text">	
   	<header class="col-12">
 		<h1 class="display-4" id="title">Angelina Opoku</h1>
 	</header>
@@ -60,8 +60,7 @@
 	<div class="col-12 text-center">
 		<p class="lead" id="sub-title">Welcome to my Portfolio</p>
 	</div>	
-	<div class="col-12">
-		<div class="col-12 contact-icons">
+		<div class="col-12 col-xs-6 contact-icons">
 			<a href="https://www.linkedin.com/in/angelina-opoku/" target="_blank"><i class="fab fa-linkedin-in fa-2x" data-toggle="tooltip" data-placement="bottom" title="LinkedIn Profile"></i></a>
 			<a href="./files/A.Opoku-Test-Resume.pdf" download target="_blank"><i class="far fa-file fa-2x" data-toggle="tooltip" data-placement="bottom" title="View Resume"></i></a>
 		    <a href="#contact-section"><i class="far fa-envelope fa-2x" data-toggle="tooltip" data-placement="bottom" title="Contact Me"></i></a>
@@ -71,62 +70,45 @@
 		  </div>
 
 		  <a href="#about-section"><button type="button" class="btn btn-outline-light btn-lg" id="about-button">About Me</button></a>
-	</div>
 </div>
-	<div id="vertical-line-1"></div> 
 </section>
 
 
 <!-- About Me Section -->
 
 <section id="about-section" class="container-fluid padding">
-<div class="row padding text-center " id="about-card">
+<div class="row padding text-center" id="about-card">
 
 	<div class="col-12"id="about-card-description">
-
-
-			<h2 class="heading">Problem Solver and Full Stack Software Developer</h2>
+			<h2 id="about-heading">Problem Solver and Full Stack Software Developer</h2>
 			<hr class="mini-break">
 			<p class="lead">I am a detail oriented developer and data scientist fluent in Java, HTML, CSS, SQL, and more.</p>
 			<p class="lead">Since completing my Masters in Public Administration, I have been focused on developing the skills needed to be a great devloper.
-			<br> I have always had a great eye for detail and enjoy solving problems, and now use these same skills in software development.</p>	
-
-		  
+			<br> I have always had a great eye for detail and enjoy solving problems, and now use these same skills in software development.</p>		  
 	</div>
 
 	<div class="col-12">
 		<a href="#project-section"><button type="button" class="btn btn-outline-light btn-lg" id="project-button">My Work</button></a>
 	</div>
+	<div id="full-line-1"></div> 
 
 
 </div>	  	
-<div id="purple-line-1"></div> 
-
 </section>
 
 
 <!-- Project Section -->
-<section class="container-fluid padding" id="project-section">
-	<div id="vertical-line-2"></div> 
-	<div id="horizontal-line-1"></div> 
-	<div id="horizontal-line-2"></div> 
-
+<section id="project-section" class="container-fluid padding">
 <div class="row margin-free-row text-center">
 
 <!-- Project Header -->
 	<div id="project-header">
-		<header class="col-12">
-		<h1 class="heading">Here are some the projects I've been working on</h1>
+		<header>
+		<h1 class="heading col-12">My Projects</h1>
 		</header>
-	<hr class="title-break">
-	<hr class="title-break">
-	<div class="col-12 text-center">
-		<p class="lead">Click on each card to learn more</p>
 	</div>
-</div>
 
-<!-- Project Decks -->
-
+<!-- Project Deck -->
 
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project1">
@@ -179,7 +161,7 @@
 				  </div>
 				</div>			
 
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4  projects">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 d-none d-sm-block projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project3">
 			</div>
 
@@ -204,7 +186,7 @@
 				  </div>
 				</div>			
 
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 projects">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 d-none d-sm-block projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project4">
 			</div>
 
@@ -229,7 +211,7 @@
 				  </div>
 				</div>			
 
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 projects">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 d-none d-md-block projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project5">
 			</div>
 
@@ -254,7 +236,7 @@
 				  </div>
 				</div>			
 
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 projects">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 d-none d-md-block projects">
 				<img src="images/blog-browsing.jpg" class="project-img" data-toggle="modal" data-target="#project6">
 			</div>
 

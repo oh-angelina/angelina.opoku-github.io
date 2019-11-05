@@ -6,6 +6,19 @@ $(document).ready(function(){
 });
 
 
+//Hides navbar on welcome screen
+
+
+
+
+//Need this code
+
+
+
+
+
+
+
 // Bootstrap form validation
 (function() {
   'use strict';

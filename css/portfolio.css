@@ -49,8 +49,8 @@
 	padding: 0;
 }
 .contact-icons i{
-	color: #6f6f8b;
-	color: white;
+/*	color: #6f6f8b;
+*/	color: white;
 	height: auto;
 	margin: 0 1rem 0 1rem; 
 }
@@ -80,13 +80,34 @@
 	}
 }
 
+/*Side Nav*/
+#side-nav {
+	width: 50px;
+	position: fixed;
+	z-index: 1;
+	top: 35%;
+	left: 15px;
+	background: rgba(219,219,219,.6);
+}
+#side-nav a:hover {
+text-decoration: none;
+}
+#side-nav i {
+	color: #587ccb;
+	display: block;
+	margin: 1.5rem 0 1.5rem 0; 
+}
+
+#side-nav i:hover {
+	color: #064579;
+	transform:scale(1.1);
+}
+
 /*About Section*/
 
 #about-section {
 	margin-top: -.25em; 
 	padding: 5em; 
-/*	background: url(../images/white-background.jpg) bottom center no-repeat;
-	background-size: cover;*/	
 }
 #about-card {
 	margin: 2.5em; 
@@ -141,7 +162,7 @@ background: linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(219,219,219,1
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 200vh;
-	max-height: 80rem;
+	max-height: 70rem;
 	min-height: 30em;
 	position: relative;
 	margin-bottom: 0;  
@@ -168,6 +189,7 @@ background: linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(219,219,219,1
 	margin: 2rem auto; 
 	z-index: 10; 
 	cursor: pointer;
+	box-shadow: 25px -15px #90abe4;
 }
 
 
@@ -176,8 +198,10 @@ background: linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(219,219,219,1
 #contact-section {
 	background: white; 
 	width: 65vw;
-	margin: 20vw auto;
+	margin: 2vw auto;
+	margin-top: 8vw;
 	padding: 3rem;
+	border: 6px solid rgba(219,219,219,1); 
 }
 #submit-button {
 	margin: 1rem; 

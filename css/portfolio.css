@@ -131,15 +131,17 @@
 
 /*Project Section*/
 
-#project-section {
-	background: url(../images/gray-pattern.jpg) bottom center no-repeat;
+#gray-img {
+	background: rgb(230,230,230);
+
+background: linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
 	background-size: cover;	
 	padding: 2rem 0 2rem 0 ;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 120vh;
-	max-height: 60rem;
+	height: 200vh;
+	max-height: 80rem;
 	min-height: 30em;
 	position: relative;
 	margin-bottom: 0;  
@@ -168,19 +170,48 @@
 	cursor: pointer;
 }
 
+
+/*Contact Section*/
+
+#contact-section {
+	background: white; 
+	width: 65vw;
+	margin: 20vw auto;
+	padding: 3rem;
+}
+#submit-button {
+	margin: 1rem; 
+	padding: .7rem 2rem .7rem 2rem;
+	font-size: 1rem;
+	background-color: #A4A4A4; 
+	color: white;
+	border-radius: 3rem;
+}
+#submit-button:hover {
+	background-color: #FAFAFA; 
+	color: #A4A4A4;	
+	animation-name: button-color;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	transform:scale(1.1);
+}
+@keyframes button-color {
+	100% {
+	background-color: #D8D8D8;
+	color: #585858;
+	}
+}
+
 /*Footer*/
 
-.jumbo-img-foot{
-	background-image: url("https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-	background-size: cover;		
-	padding: 3em 0 2em 0 ;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: .05vh;
-	max-height: 1em;
-	min-height: .5em;
+/*.jumbo-img-foot{
+	background: rgb(140,138,138);
+	background: linear-gradient(90deg, rgba(140,138,138,1) 0%, rgba(189,185,188,1) 35%, rgba(93,92,92,1) 100%);
+	max-height: 3em;
+	min-height: 2em;
 	position: relative;
-	margin-top: 0; 
-	margin-bottom: 0; 
+	margin: 0 auto; 
+}*/
+#footer {
+	padding-top: .5rem; 
 }

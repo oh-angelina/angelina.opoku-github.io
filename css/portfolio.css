@@ -1,5 +1,39 @@
 
-/*Welcome*/
+/*Welcome Screen*/
+
+.welcome {
+	background: black;
+	color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 200;
+	line-height: 90vh;
+}
+.welcome-text {
+	margin-top: 15rem;  
+	animation: fade-in 2s ease-in forwards;
+	opacity: 0;
+}
+.fading {
+	opacity: 1;
+	animation: fade-out 10s ease-out forwards;	
+}
+@keyframes fade-in{
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-out{
+	to {
+		opacity: 0;
+	}
+}
+
+/*Title Screen*/
 .jumbo-img{
 	background: url(../images/cover.jpeg) bottom center no-repeat;
 	background-size: cover;		
@@ -8,11 +42,12 @@
 	max-height: 60rem;
 	min-height: 25rem;
 	position: relative;
-	margin-bottom: 0;  
+	margin-bottom: 0; 
+	z-index: 10; 
 }
 .jumbo-text{
-	background-color: rgb(0,0,0); /* Fallback color */
-  	background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+	background-color: rgb(0,0,0);
+  	background-color: rgba(0,0,0, 0.6);
 	color: white;
 	position: absolute;
 	top: 50%;
@@ -225,17 +260,21 @@ background: linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(219,219,219,1
 	color: #585858;
 	}
 }
-
-/*Footer*/
-
-/*.jumbo-img-foot{
-	background: rgb(140,138,138);
-	background: linear-gradient(90deg, rgba(140,138,138,1) 0%, rgba(189,185,188,1) 35%, rgba(93,92,92,1) 100%);
-	max-height: 3em;
-	min-height: 2em;
-	position: relative;
-	margin: 0 auto; 
-}*/
 #footer {
 	padding-top: .5rem; 
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 768px) {
+	#about-section {
+	    padding: 0;
+	}
+	#contact-section {
+		padding: 0;
+		width: 75vw;
+	}
+	#side-nav{
+		left: 0;
+		background: none;
+	}
 }

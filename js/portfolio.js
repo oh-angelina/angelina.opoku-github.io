@@ -1,21 +1,20 @@
+//Welcome Screen removal
+
+const welcome = document.querySelector(".welcome");
+
+document.addEventListener("DOMContentLoaded", (e)=>{
+    setTimeout(()=>{
+      welcome.classList.add("invisible");
+      welcome.classList.add("fading");
+    }, 2500);
+  })
+    
 
 
-// Activates Tooltiips on welcome page icons 
+// Activates Tooltiips on title icons 
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
-
-
-//Hides navbar on welcome screen
-
-
-
-
-//Need this code
-
-
-
-
 
 
 
@@ -37,6 +36,8 @@ $(document).ready(function(){
     });
   }, false);
 })();
+
+
 
  // Keeps the year in the footer up to date
 var today = new Date();

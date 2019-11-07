@@ -5,7 +5,6 @@
 
 	Next
 	- add button that shows that contact me form is not yet enabled
-	-align text box
 
 	projects
 	- host! link to code pen is  prob easiest
@@ -294,9 +293,9 @@
 
 <form class="needs-validation col-12" novalidate>
   <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="validationCustom01">Name</label>
-      <input type="text" class="form-control form-control-lg" id="validationCustom01" required>
+    <div class="form-group col-xl-6 col-md-12">
+      <label for="validateName">Name</label>
+      <input type="text" class="form-control form-control-lg" id="validateName" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -304,9 +303,9 @@
           Please enter your name.
       </div>
     </div>
-    <div class="form-group col-md-6">
-      <label for="validationCustom02">Email</label>
-      <input type="text" class="form-control form-control-lg" id="validationCustom02" required>
+    <div class="form-group col-xl-6 col-md-12">
+      <label for="validateEmail">Email</label>
+      <input type="text" class="form-control form-control-lg" id="validateEmail" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -315,9 +314,10 @@
       </div>
     </div>
   </div>
-  <div class="form-group row col-12">
-      <label for="validationCustom01">Subject</label>
-      <input type="text" class="form-control form-control-lg" id="validationCustom01" required>
+  <div class="form-row">
+  <div class="form-group col-12">
+      <label for="validatieSubject">Subject</label>
+      <input type="text" class="form-control form-control-lg" id="validatieSubject" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -325,15 +325,18 @@
           Please a subject line.
         </div>
     </div>
-    <div class="form-group row col-12">
-    <label for="validationTextarea">Message</label>
-    <textarea class="form-control form-control-lg" id="validationTextarea" rows="4" required></textarea>
+</div>
+	<div class="form-row">
+    <div class="form-group col-12">
+    <label for="validateTextarea">Message</label>
+    <textarea class="form-control form-control-lg" id="validateTextarea" rows="4" required></textarea>
       <div class="valid-feedback">
         Looks good!
       </div>
       <div class="invalid-feedback">
           Please enter a message.
         </div>
+  </div>
   </div>
   <button class="btn btn-outline-light btn-lg" id="submit-button" type="submit">Submit</button>
 </form>

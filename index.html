@@ -294,7 +294,8 @@
 	<div class="col-12">
 		<a href="#contact-section"><button type="button" class="btn btn-outline-light btn-lg gray-btn" id="contact-button">Contact Me</button></a>
 	</div>
-
+</div>
+</section>
 <!-- Contact Section -->
 
 <section class="container-fluid padding">
@@ -306,11 +307,12 @@
 			</h2>
 		</div>
 
-<form class="needs-validation col-12" novalidate>
+<form class="needs-validation col-12" action="https://formspree.io/xyyypdlb"
+  method="POST" novalidate>
   <div class="form-row">
     <div class="form-group col-xl-6 col-md-12">
       <label for="validateName">Name</label>
-      <input type="text" class="form-control form-control-lg" id="validateName" required>
+      <input type="text" class="form-control form-control-lg" id="validateName" name="name" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -320,7 +322,7 @@
     </div>
     <div class="form-group col-xl-6 col-md-12">
       <label for="validateEmail">Email</label>
-      <input type="text" class="form-control form-control-lg" id="validateEmail" required>
+      <input type="text" class="form-control form-control-lg" id="validateEmail" name="_replyto" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -332,7 +334,7 @@
   <div class="form-row">
   <div class="form-group col-12">
       <label for="validatieSubject">Subject</label>
-      <input type="text" class="form-control form-control-lg" id="validatieSubject" required>
+      <input type="text" class="form-control form-control-lg" id="validatieSubject" name="subject" required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -344,7 +346,7 @@
 	<div class="form-row">
     <div class="form-group col-12">
     <label for="validateTextarea">Message</label>
-    <textarea class="form-control form-control-lg" id="validateTextarea" rows="4" required></textarea>
+    <textarea class="form-control form-control-lg" id="validateTextarea" rows="4" name="message" required></textarea>
       <div class="valid-feedback">
         Looks good!
       </div>

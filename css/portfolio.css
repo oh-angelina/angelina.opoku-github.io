@@ -8,12 +8,16 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	z-index: 200;
 	line-height: 90vh;
 }
+#welcome-name {
+	font-family: 'Dynalight', cursive;
+	font-size: 6rem;
+}
 .welcome-text {
-	margin-top: 15rem;  
+	margin-top: 20%;  
 	animation: fade-in 2s ease-in forwards;
 	opacity: 0;
 }
@@ -31,6 +35,34 @@
 	to {
 		opacity: 0;
 	}
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #F2F2F2;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
 }
 
 /*Title Screen*/
@@ -91,6 +123,10 @@
 }
 .contact-icons i:hover{
 	transform:scale(1.1);
+}
+button {
+	scroll-behavior: smooth;
+
 }
 #about-button {
 	margin: 2rem 0 1rem 0; 
@@ -162,7 +198,7 @@ text-decoration: none;
     margin: 1em auto; 
     width: 60%
 }
-#project-button {
+.gray-btn{
 	margin: 1rem; 
 	padding: .7rem 2rem .7rem 2rem;
 	font-size: 1rem;
@@ -170,7 +206,7 @@ text-decoration: none;
 	color: white;
 	border-radius: 3rem;
 }
-#project-button:hover {
+.gray-btn:hover {
 	background-color: #FAFAFA; 
 	color: #A4A4A4;	
 	animation-name: button-color;
@@ -189,8 +225,7 @@ text-decoration: none;
 
 #gray-img {
 	background: rgb(230,230,230);
-
-background: linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
+	background: linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
 	background-size: cover;	
 	padding: 2rem 0 2rem 0 ;
 	background-attachment: fixed;
@@ -227,7 +262,6 @@ background: linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(219,219,219,1
 	box-shadow: 25px -15px #90abe4;
 }
 
-
 /*Contact Section*/
 
 #contact-section {
@@ -237,22 +271,6 @@ background: linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(219,219,219,1
 	margin-top: 8vw;
 	padding: 3rem;
 	border: 6px solid rgba(219,219,219,1); 
-}
-#submit-button {
-	margin: 1rem; 
-	padding: .7rem 2rem .7rem 2rem;
-	font-size: 1rem;
-	background-color: #A4A4A4; 
-	color: white;
-	border-radius: 3rem;
-}
-#submit-button:hover {
-	background-color: #FAFAFA; 
-	color: #A4A4A4;	
-	animation-name: button-color;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-	transform:scale(1.1);
 }
 @keyframes button-color {
 	100% {

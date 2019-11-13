@@ -7,7 +7,7 @@
 	- add button that shows that contact me form is not yet enabled
 
 	projects
-	- host! link to code pen is  prob easiest
+	- host! link to code pen is probably easiest
 
 	Future Steps
 		- welcome
@@ -18,7 +18,8 @@
 		
 		-projects
 			- add an on hover code and host section with animations 
-	- set it up so that contact form sends to me and alerts user that feedback was sent 
+		-contact
+			- set it up so that contact form sends to me and alerts user that feedback was sent 
  -->
 
 
@@ -31,9 +32,13 @@
 
 	<!-- Link to Bootstrap-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	
+
+	<!-- Link to Google Fonts-->	
+<link href="https://fonts.googleapis.com/css?family=Dynalight&display=swap" rel="stylesheet">
+
 	<!-- Link to Local Stylesheet-->
 	<link rel="stylesheet" href="css/portfolio.css">
+
 </head>
 
 <body>
@@ -41,16 +46,16 @@
 <!-- Welcome Splash Page -->
 
 <section class="container-fluid padding welcome">
-	<div class="row padding text-center">
-		<div class="col-12 welcome-text">
-		<h1>Angelina Opoku</h1>
+<div class="row padding text-center">
+	<div class="col-12 welcome-text">
+
+
+		<h1 id="welcome-name">Angelina Opoku</h1>
 		<h2>Full Stack Developer</h2>
-		<div class="progress" style="height: 1px; width: 20vw; margin: 0 auto;">
-  			<div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-		</div>
+		<div class="spinner"></div>
+
 	</div>
-	</div>
-	
+</div>
 </section>
 
 <!-- Title -->
@@ -101,7 +106,7 @@
 	</div>
 
 	<div class="col-12">
-		<a href="#project-section"><button type="button" class="btn btn-outline-light btn-lg" id="project-button">My Work</button></a>
+		<a href="#project-section"><button type="button" class="btn btn-outline-light btn-lg gray-btn" id="project-button">My Work</button></a>
 	</div>
 
 </div>	  	
@@ -125,8 +130,9 @@
 	</div>
 
 <!-- Project Deck -->
-
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 projects">
+				<!-- Note to change col sizes once additional projects are added back in -->
+<!-- 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 projects">
+ -->			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 projects">
 				<img src="images/blog-browsing.jpg" class="project-img" alt="Project 1" data-toggle="modal" data-target="#project1">
 			</div>
 
@@ -151,7 +157,9 @@
 				  </div>
 				</div>	
 
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 projects">
+				<!-- Note to change col sizes once additional projects are added back in -->
+<!-- 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 projects">
+ -->			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 projects">
 				<img src="images/blog-browsing.jpg" class="project-img" alt="Project 2" data-toggle="modal" data-target="#project2">
 			</div>
 
@@ -176,9 +184,10 @@
 				  </div>
 				</div>			
 
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-none d-sm-block projects">
+				<!-- Will add back once project is complete -->
+			<!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-none d-sm-block projects">
 				<img src="images/blog-browsing.jpg" class="project-img" alt="Project 3" data-toggle="modal" data-target="#project3">
-			</div>
+			</div> -->
 
 				<!-- Modal -->
 				<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="project3-title" aria-hidden="true">
@@ -199,9 +208,12 @@
 				      </div>
 				    </div>
 				  </div>
-				</div>			
+				</div>	
 
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-none d-sm-block projects">
+				<!-- Note to change col sizes once additional projects are added back in -->
+<!-- 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-none d-sm-block projects">
+ -->			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 projects">
+
 				<img src="images/blog-browsing.jpg" class="project-img" alt="Project 4" data-toggle="modal" data-target="#project4">
 			</div>
 
@@ -226,7 +238,9 @@
 				  </div>
 				</div>			
 
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-none d-lg-block projects">
+				<!-- Note to change col sizes once additional projects are added back in -->
+<!-- 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-none d-lg-block projects">
+ -->			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-none d-md-block projects">
 				<img src="images/blog-browsing.jpg" class="project-img" alt="Project 5" data-toggle="modal" data-target="#project5">
 			</div>
 
@@ -251,9 +265,10 @@
 				  </div>
 				</div>			
 
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-none d-lg-block projects">
+				<!-- Will add back in once project is complete -->
+<!-- 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-none d-lg-block projects">
 				<img src="images/blog-browsing.jpg" class="project-img" alt="Project 6" data-toggle="modal" data-target="#project6">
-			</div>
+			</div> -->
 
 				<!-- Modal -->
 				<div class="modal fade" id="project6" tabindex="-1" role="dialog" aria-labelledby="project6-title" aria-hidden="true">
@@ -276,9 +291,9 @@
 				  </div>
 				</div>
 
-</div>	
-	<div id="vertical-line-3"></div> 
-</section>
+	<div class="col-12">
+		<a href="#contact-section"><button type="button" class="btn btn-outline-light btn-lg gray-btn" id="contact-button">Contact Me</button></a>
+	</div>
 
 <!-- Contact Section -->
 
@@ -338,7 +353,7 @@
         </div>
   </div>
   </div>
-  <button class="btn btn-outline-light btn-lg" id="submit-button" type="submit">Submit</button>
+  <button class="btn btn-outline-light btn- gray-btn" id="submit-button" type="submit">Submit</button>
 </form>
 
 
@@ -353,9 +368,6 @@
 		<p id="footer" class="col-12">&#169 2019 Angelina Opoku. All rights reserved.</p>
 	</div>
 	
-	<div id="vertical-line-4"></div> 
-	<div id="vertical-line-5"></div> 
-
 </div>
 </footer>
 
